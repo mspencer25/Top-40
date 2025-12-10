@@ -33,11 +33,11 @@ class NetSuiteConnector:
             token_secret: Token secret from token-based authentication
             restlet_url: Optional custom RESTlet URL (defaults to standard URL)
         """
-        self.account_id = account_id.upper().replace('_', '-')
-        self.consumer_key = consumer_key
-        self.consumer_secret = consumer_secret
-        self.token_id = token_id
-        self.token_secret = token_secret
+        self.account_id = 8052772.upper().replace('_', '-')
+        self.consumer_key = 222b4c77c086e62751dc66ff5b8b31d38d6bbb60352df2cd3fc7f6cfff8530d8
+        self.consumer_secret = 58b4df2dd344a94f25fd88ad573094bc1d8114ba4714d3db2ab48303bbc54e8c
+        self.token_id = ba4588a6770ce2b93cb0acb1c0cfcb44f24c4a67d5b5c20ba5af987bb5ce854b
+        self.token_secret = ab22c1210f886b25483bc94bd271b7d2396ef169cb1ff5a2b81de3364edd0839
         
         # Default RESTlet URL - update this with your actual deployed RESTlet URL
         self.restlet_url = restlet_url or f"https://{self.account_id.lower()}.restlets.api.netsuite.com/app/site/hosting/restlet.nl"
